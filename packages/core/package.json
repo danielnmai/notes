@@ -7,14 +7,15 @@
   },
   "exports": {
     "./*": [
-      "./src/*/index.ts",
-      "./src/*.ts"
+      "./src/*.ts",
+      "./src/*/index.ts"
     ]
   },
   "dependencies": {
     "sst": "*"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.159",
     "vitest": "^2"
   }
 }
