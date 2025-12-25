@@ -1,0 +1,16 @@
+meta {
+  name: Get all nodes
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://iw4gg9squj.execute-api.us-east-1.amazonaws.com/notes
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

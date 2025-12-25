@@ -1,0 +1,27 @@
+meta {
+  name: Update a note
+  type: http
+  seq: 5
+}
+
+put {
+  url: https://iw4gg9squj.execute-api.us-east-1.amazonaws.com/notes/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 01cf1d60-e0f7-11f0-9d58-491e5086028e
+}
+
+body:json {
+  {
+    "content": "new content",
+    "attachment": "new"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

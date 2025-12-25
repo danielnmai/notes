@@ -1,0 +1,20 @@
+meta {
+  name: Get a note
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://iw4gg9squj.execute-api.us-east-1.amazonaws.com/notes/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 01cf1d60-e0f7-11f0-9d58-491e5086028e
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
